@@ -8,5 +8,6 @@ package Day08;
 public class HelloWorld {
     public static void main(String[] args) {
         System.out.println("nice to meet you to die");
+        System.out.println("不错不错,味道好极了");
     }
 }
