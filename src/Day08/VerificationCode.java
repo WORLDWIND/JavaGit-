@@ -1,5 +1,7 @@
 package Day08;
 
+import java.util.Scanner;
+
 /**
  * @program: Tedu
  * @author: Mr.WorldWind
@@ -10,7 +12,10 @@ public class VerificationCode {
         /**
          * 需求:生成?位验证码(大写字母,小写字母,数字)
          */
-        System.out.println(createVerificationCode(4));
+        Scanner scan = new Scanner(System.in);
+        System.out.println("请输入需要几位的随机数");
+        int i = scan.nextInt();
+        System.out.println(createVerificationCode(i));
         /*String str = ""+','+'w';
         System.out.println(str);*/
 
@@ -32,13 +37,13 @@ public class VerificationCode {
             int a = (int)(Math.random()*3+1);
             switch (a){
                 case 1:
-                    chs[i] = (char)(Math.random()*25+65);
+                    chs[i] = (char)(Math.random()*25+65);//A~Z
                     break;
                 case 2:
-                    chs[i] = (char)(Math.random()*25+97);
+                chs[i] = (char)(Math.random()*25+97);//a~z
                     break;
                 case 3:
-                    chs[i] = (char)(Math.random()*10+48);
+                    chs[i] = (char)(Math.random()*9+48);//0~9
                     break;
             }
         }
