@@ -11,5 +11,6 @@ public class CarTest {
         car.Start();
         car.Running();
         car.Stop();
+        System.out.println("GitTest看看能不能传上去");
     }
 }
