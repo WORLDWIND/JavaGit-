@@ -8,7 +8,7 @@ package OODay01;
 //TODO 学生类
 public class Student {
     //成员变量
-    String name;
+    private String name;
     int age;
     String className;
     String stuId;
@@ -29,5 +29,9 @@ public class Student {
     //this只能在方法里用
     void playWith(String name){
         System.out.println(this.name+"在和"+name+"一起玩");
+    }
+
+    public String getName() {
+        return name;
     }
 }
