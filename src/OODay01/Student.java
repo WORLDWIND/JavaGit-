@@ -7,19 +7,30 @@ package OODay01;
  **/
 //TODO 学生类
 public class Student {
-    //成员变量
+    /**成员变量*/
     private String name;
     int age;
     String className;
     String stuId;
-    //构造方法
+    //对于新没有直接赋值的初始值,给个默认值
+    Student(){
+        this("无名氏",0,"未知","未知");
+    }
+    Student(String name,int age){
+        this.name = name;
+        this.age = age;
+        className = null;
+        stuId = null;
+    }
+    /**构造方法*/
+                    /**局部变量:写在方法里的方法是局部连变量*/
     Student(String name,int age,String className,String stuId){
         this.name = name;
         this.age = age;
         this.className = className;
         this.stuId = stuId;
     }
-    //方法
+    /**方法*/
     void study(){
         System.out.println(name+"在学习...");
     }

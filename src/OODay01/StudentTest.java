@@ -16,7 +16,7 @@ public class StudentTest {
         Student student2 = new Student("zhaoliu",19,"JSD2302","A13190057");
         student1.sayHi();
         student1.study();
-        student1.playWith(student2.getName());
+        student1.playWith(student.getName());
         student2.sayHi();
         student2.study();
         student2.playWith(student1.getName());
