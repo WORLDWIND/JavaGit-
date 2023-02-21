@@ -19,6 +19,5 @@ public class ConsDemo {
         student2.sayHi();
         student2.study();
         student2.playWith(student1.getName());
-
     }
 }
