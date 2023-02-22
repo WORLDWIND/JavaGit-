@@ -36,8 +36,6 @@ public class Persion {
 class Student extends Persion {
     String className;
     String stuId;
-    String name;
-
     Student() {
         super();
     }
