@@ -16,5 +16,6 @@ public class ExtendsTest {
         Teacher teacher = new Teacher("liyuhang",28,"dongbeinongyedaxue",20000);
         teacher.teach();
         teacher.sayHi();
+        System.out.println("test");
     }
 }
