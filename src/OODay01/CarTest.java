@@ -13,5 +13,6 @@ public class CarTest {
         car.Stop();
         System.out.println("GitTest看看能不能传上去");
         System.out.println("在试一次?");
+        System.out.println("Nice to meet you to die");
     }
 }
