@@ -18,7 +18,7 @@ public class Animal {
         this.color = color;
     }
     void Drink(){
-        System.out.println(name+"正在喝水");
+        System.out.println(age+"岁的"+name+"正在喝水");
     }
     void Eat(){
         System.out.println(name+"正在吃饭");
