@@ -19,7 +19,7 @@ public class TeduManagementSystem {
         directorOfTeachingAndResearch.solveProblem();
         directorOfTeachingAndResearch.trainEmplayees();
         directorOfTeachingAndResearch.editorialSecretary();
-        System.out.println(directorOfTeachingAndResearch.toString());
+        System.out.println(directorOfTeachingAndResearch);
         //讲师
         lecturers.clockIn();
         lecturers.clockOut();
@@ -27,18 +27,18 @@ public class TeduManagementSystem {
         lecturers.solveProblem();
         lecturers.trainEmplayees();
         lecturers.editorialSecretary();
-        System.out.println(lecturers.toString());
+        System.out.println(lecturers);
         //项目经理
         projectManager.clockIn();
         projectManager.clockOut();
         projectManager.finishWork();
         projectManager.editorialSecretary();
-        System.out.println(projectManager.toString());
+        System.out.println(projectManager);
         //班主任
         classTeachers.clockIn();
         classTeachers.clockOut();
         classTeachers.finishWork();
-        System.out.println(classTeachers.toString());
+        System.out.println(classTeachers);
     }
 }
 
