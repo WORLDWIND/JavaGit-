@@ -3,7 +3,7 @@ package OOPDay03.ClassExercises;
 /**
  * @program: Tedu
  * @author: Mr.WorldWind
- * @create: 2023/2/23  14:44
+ * @create: 2023/2/23  14:56
  **/
 public class TeduManagementSystem {
     /**设计达内基本教学人员的分工*/
