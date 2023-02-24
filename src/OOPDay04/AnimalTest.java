@@ -30,10 +30,27 @@ public class AnimalTest {
         a[3] = new Chick("小红", 1, "红");
         a[4] = new Fish("小银", 1, "银");
         for (int i = 0; i < a.length; i++) {
-            System.out.println(a[i].toString());
+            System.out.println("----------");
+            //System.out.println(a[i].toString());
+            if(a[i] instanceof Dog){
+                Dog dog = (Dog) a[i];
+                System.out.println(dog.lookHome()+"-----------");
+                dog.swim();
+            }
+            /*if(a[i] instanceof Chick){
+                Chick chick = (Chick) a[i];
+            }*/
+            if(a[i] instanceof Fish){
+                Fish fish = (Fish) a[i];
+                fish.swim();
+            }
+            a[i].eat();
+            a[i].drink();
+            a[i].sleep();
+            System.out.println("-------------");
         }
         Dog dog = new Dog("小黑", 2, "黑");
-        System.out.println(dog.toString());
+        System.out.println(dog.toString()+"666");
 
         master = new Master();
         Dog dog1 = new Dog("小白", 1, "白");
@@ -47,12 +64,12 @@ public class AnimalTest {
         master.swim(fish);
 
         Animal animal = new Dog("小黑",1,"黑");
-        Dog dog2 = (Dog) animal;
-        Swim swim = (Swim) animal;
+        Dog dog2 = (Dog) animal; // Dog 强转为Animal 强转为父类
+        Swim swim = (Swim) animal; // Dog 强转为Swim接口 强转为接口
         System.out.println(dog2.lookHome());
         swim.swim();
 
-        Swim swim1 = dog2;
+        Swim swim1 = dog2;//TODO Dog 可以直接赋值给接口
         swim1.swim();
         System.out.println(animal instanceof Dog);//true
         System.out.println(animal instanceof Swim);//true
