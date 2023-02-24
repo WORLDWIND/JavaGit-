@@ -28,6 +28,10 @@ public class Animal {
         System.out.println(name + "今年" + age + "岁了");
     }
 
+    public void drink(){
+        System.out.println(name + "正在喝水");
+    }
+
     @Override
     public String toString() {
         return getClass().getName()+"{" +
@@ -57,6 +61,9 @@ class Dog extends Animal implements Swim{
     @Override
     public String toString() {
         return super.toString();
+    }
+    public String lookHome(){
+        return name+"正在看门";
     }
 }
 
