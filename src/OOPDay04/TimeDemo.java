@@ -11,7 +11,17 @@ import java.util.TimerTask;
  **/
 public class TimeDemo {
     public static void main(String[] args) {
-        Timer timer = new Timer();//定时器对象
+        //TODO 对时间定时器进行复写
+        Timer timer = new Timer();
+        int interval = 1000;
+        timer.schedule(new TimerTask() {
+            @Override
+            public void run() {
+                System.out.println("起床敲代码了");
+            }
+        },interval,interval);
+
+        /*Timer timer = new Timer();//定时器对象
         int interval = 1000;//定时间隔(以毫秒为单位)
         //TODO 定闹钟7点响,只需要定一次,可以设计为匿名内部类对象
         timer.schedule(new TimerTask() {
@@ -20,6 +30,6 @@ public class TimeDemo {
                 System.out.println("七点啦");
             }
         }, interval,interval);//TODO  写了一个interval 只执行一次 第二个是每隔多长时间执行一次,重复执行
-
+*/
     }
 }
