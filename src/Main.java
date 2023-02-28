@@ -15,5 +15,40 @@ public class Main {
         for (char aChar : chars) {
             System.out.println(aChar);
         }
+
+//        Aoo a1 = new Aoo();
+//        a1.a = 100;
+//        a1.b = 100;
+//        System.out.println(a1.a);
+//        System.out.println(a1.b);
+//        a1.b = 1000;
+//        System.out.println(a1.b);
+        System.out.println(Aoo.abc());
+
     }
+}
+class Aoo{
+    static int a;
+    //static int b;
+    static {
+        a = 4;
+    }
+    static int abc(){
+        return a;
+    }
+    static {
+        a /= 3;
+    }
+}
+interface aa{
+
+}
+interface bb{
+
+}
+interface cc extends aa,bb{
+
+}
+class c implements aa,bb,cc{
+
 }
