@@ -1,4 +1,4 @@
-package OOPDay07.regexObject;
+package OOPDay07;
 
 /**
  * boolean matches(String regex):匹配
