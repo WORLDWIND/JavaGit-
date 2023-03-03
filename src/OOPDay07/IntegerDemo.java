@@ -2,6 +2,7 @@ package OOPDay07;
 
 /**
  * 包装类演示
+ *
  * @program: Tedu
  * @author: Mr.WorldWind
  * @create: 2023/3/2  19:32
@@ -21,20 +22,30 @@ public class IntegerDemo {
         int i = i4.intValue();
         System.out.println(i);*/
 
-       //TODO 触发了自动装箱机制
+        //TODO 触发了自动装箱机制
         Integer i = 5;//Integer i = Integer.valueOf(5); 装箱
         //TODO 触发了自动拆箱的机制
         int j = i;//int j = i.intValue();
 
-    }
-}
-interface  I{
-    public abstract void show();//抽象方法 -- 用的多
-    public static final int Num = 5;//常量 -- 用的少
-    public default void test(){//默认方法 -- 用的少,1.8加入
+        String str = "Hello World";
+        int start = str.indexOf("llo Wor");
+        int end = "llo Wor".length() + start;
+        str = str.substring(start, end);
+        System.out.println(str);
 
     }
-    public static void say(){//静态方法--用的少,1.8加入的
+}
+
+interface I {
+    public abstract void show();//抽象方法 -- 用的多
+
+    public static final int Num = 5;//常量 -- 用的少
+
+    public default void test() {//默认方法 -- 用的少,1.8加入
+
+    }
+
+    public static void say() {//静态方法--用的少,1.8加入的
 
     }
    /* private void sayHi(){
