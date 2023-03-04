@@ -27,5 +27,6 @@ public class Test {
             str1+=c[j];
         }
         System.out.println(str1);
+        System.out.println("TestGitee");
     }
 }
