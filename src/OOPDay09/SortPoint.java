@@ -1,7 +1,6 @@
 package OOPDay09;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
@@ -21,14 +20,19 @@ public class SortPoint {
         list.add(new Point(789, 8));
         list.add(new Point(9000, 10));
         System.out.println("list原始数据" + list);
-        Collections.sort(list, new Comparator<Point>() {
+        /*Collections.sort(list, new Comparator<Point>() {
+            @Override
+            public int compare(Point o1, Point o2) {
+                return (o1.getX() * o1.getX() + o1.getY() * o1.getY()) - (o2.getX() * o2.getX() + o2.getY() * o2.getY());
+            }
+        });*/
+        //方式一样,但是list更为简单 1.8才有
+        list.sort(new Comparator<Point>() {
             @Override
             public int compare(Point o1, Point o2) {
                 return (o1.getX() * o1.getX() + o1.getY() * o1.getY()) - (o2.getX() * o2.getX() + o2.getY() * o2.getY());
             }
         });
         System.out.println("list排序之后的数据" + list);
-        System.out.println(90000*90000);
-
     }
 }
