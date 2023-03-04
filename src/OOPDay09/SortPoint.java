@@ -1,0 +1,34 @@
+package OOPDay09;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+
+/**
+ * Point对象 -- 集合的排序
+ *
+ * @program: Tedu
+ * @author: Mr.WorldWind
+ * @create: 2023/3/4  18:41
+ **/
+public class SortPoint {
+    public static void main(String[] args) {
+        List<Point> list = new ArrayList<>();
+        list.add(new Point(120, 20));
+        list.add(new Point(30, 4));
+        list.add(new Point(5, 600));
+        list.add(new Point(789, 8));
+        list.add(new Point(9000, 10));
+        System.out.println("list原始数据" + list);
+        Collections.sort(list, new Comparator<Point>() {
+            @Override
+            public int compare(Point o1, Point o2) {
+                return (o1.getX() * o1.getX() + o1.getY() * o1.getY()) - (o2.getX() * o2.getX() + o2.getY() * o2.getY());
+            }
+        });
+        System.out.println("list排序之后的数据" + list);
+        System.out.println(90000*90000);
+
+    }
+}
