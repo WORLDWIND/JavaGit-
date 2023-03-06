@@ -9,9 +9,11 @@ import java.io.File;
  **/
 public class Test06 {
     public static void main(String[] args) {
+        //TODO 运用匿名内部类和lambda表达式所写
         File dir = new File("./test1");
         File[] files = dir.listFiles(file -> {
-            return file.getName().matches(".*s.*");
+            //return file.getName().matches(".*s.*");
+            return file.getName().contains("s");
         });
         for (File file : files) {
             System.out.println(file.getName());
