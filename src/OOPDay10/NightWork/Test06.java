@@ -18,5 +18,6 @@ public class Test06 {
         for (File file : files) {
             System.out.println(file.getName());
         }
+        System.out.println("完事啦");
     }
 }
