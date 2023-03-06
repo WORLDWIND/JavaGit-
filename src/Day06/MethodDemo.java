@@ -18,7 +18,7 @@ public class MethodDemo {
         new test(new Method1() {
             @Override
             public String test() {
-                return "Hello World";
+                return "Hello.txt World";
             }
         });
     }

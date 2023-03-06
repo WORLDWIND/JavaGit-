@@ -11,7 +11,7 @@ public class Test1 {
     int age;
     //构造方法
     Test1(){
-        name = "Hello";
+        name = "Hello.txt";
         age = 10;
     }
 }

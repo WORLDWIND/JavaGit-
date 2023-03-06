@@ -17,7 +17,7 @@ public class AnoinnerClassDemo {
         Coo coo = new Coo() {//重写Coo中的方法
             @Override
             void show() {
-                System.out.println("Hello World");
+                System.out.println("Hello.txt World");
                 a = 10;
             }
             //num = 55; 编译错误,匿名内部类中不能修改外面局部变量的值

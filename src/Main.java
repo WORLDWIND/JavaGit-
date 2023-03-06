@@ -10,7 +10,7 @@ public class Main {
         int[] arr = {};
         System.out.println(arr);
 
-        String a = "Hello World";
+        String a = "Hello.txt World";
         char[] chars = a.toCharArray();
         for (char aChar : chars) {
             System.out.println(aChar);

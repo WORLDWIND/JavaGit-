@@ -18,7 +18,7 @@ public class Test01 {
         }
     }
     public static void say(){
-        System.out.println("Hello World");
+        System.out.println("Hello.txt World");
     }
     public static void sayHi(String name){
         System.out.println(name + "向你打招呼");

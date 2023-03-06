@@ -8,7 +8,7 @@ package OOPDay03;
 public class interfaceDemo extends Boo implements Inter{
     @Override
     public void show() {
-        System.out.println("Hello");
+        System.out.println("Hello.txt");
     }
 
     @Override

@@ -27,7 +27,7 @@ public class IntegerDemo {
         //TODO 触发了自动拆箱的机制
         int j = i;//int j = i.intValue();
 
-        String str = "Hello World";
+        String str = "Hello.txt World";
         int start = str.indexOf("llo Wor");
         int end = "llo Wor".length() + start;
         str = str.substring(start, end);

@@ -15,7 +15,7 @@ public class ObjectDemo {
         // TODO 调用Object类的equals(),内部还是在使用==比较地址,没有意义 因此常常需要被重写equals()
         System.out.println(point1.equals(point2));//true
         System.out.println(point1 == point2);//false
-        System.out.println(point1.equals("Hello"));
+        System.out.println(point1.equals("Hello.txt"));
 
     }
 }
