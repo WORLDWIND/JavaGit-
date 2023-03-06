@@ -22,8 +22,15 @@ public class FileDemo {
         //File file1 = new File("./");
 
         File file = new File("./demo.txt");
-        System.out.println(file.getName());
-        long length = file.length();
+        System.out.println(file.getName());//获取file文件或目录名
+        //长度为0有两种情况:1.路径无效2确实文件没有内容
+        long length = file.length();//获取file表示的文件或目录的长度
         System.out.println(length);
+        boolean ih = file.isHidden();
+        System.out.println(ih);//false
+        boolean cr = file.canRead();
+        boolean cw = file.canWrite();
+        System.out.println(cr);//true
+        System.out.println(cw);//true
     }
 }
