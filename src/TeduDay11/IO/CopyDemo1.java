@@ -23,5 +23,6 @@ public class CopyDemo1 {
         System.out.println("真牛逼,复制完事了,共用时:" + (end - start) + "ms");
         fis.close();
         fos.close();
+        System.out.println("github还是失败了");
     }
 }
