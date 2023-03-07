@@ -1,6 +1,7 @@
 package OOPDay10.NightWork;
 
 import java.io.File;
+import java.util.Arrays;
 
 /**
  * @program: Tedu
@@ -16,9 +17,10 @@ public class Test06 {
             return file.getName().contains("s");
         });*/
         File[] files = dir.listFiles((pathname) -> pathname.getName().contains("s"));
-        for (File file : files) {
+        /*for (File file : files) {
             System.out.println(file.getName());
-        }
+        }*/
+        System.out.println(Arrays.toString(files));
         System.out.println("完事啦");
     }
 }
