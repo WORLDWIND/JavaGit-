@@ -22,3 +22,10 @@ public class Test {
 class Aoo{
     int a;
 }
+interface a {
+    public void fun();
+    void fun1();
+}
+enum hello{
+
+}
