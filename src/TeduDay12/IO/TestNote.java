@@ -16,16 +16,16 @@ import java.util.Scanner;
  **/
 public class TestNote {
     public static void main(String[] args) throws Exception{
-        FileOutputStream fos = new FileOutputStream("note.txt",true);
+        FileOutputStream fos = new FileOutputStream("E:\\桌面文件\\note.md",true);
         while(true){
             System.out.println("请开始写入数据!");
             Scanner scanner = new Scanner(System.in);
             String line = scanner.nextLine() + "\n";
-            byte[] data = line.getBytes(StandardCharsets.UTF_8);
             if(line.equals("exit\n")) {
                 System.out.println("退出成功");
                 break;
             }
+            byte[] data = line.getBytes(StandardCharsets.UTF_8);
             fos.write(data);
         }
         fos.close();
