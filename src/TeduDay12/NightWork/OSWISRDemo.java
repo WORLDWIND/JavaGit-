@@ -7,6 +7,7 @@ import java.io.OutputStreamWriter;
 import java.nio.charset.StandardCharsets;
 
 /**
+ * BrockIO线程阻塞,不能一边读一边写
  * @program: Tedu
  * @author: Mr.WorldWind
  * @create: 2023/3/8  17:52
@@ -26,6 +27,8 @@ public class OSWISRDemo {
         }
         System.out.println("读取完毕");
         isr.close();
-
+        /*int[] arr = {1,2,3,4,5,8,7,6};
+        Arrays.sort(arr);
+        System.out.println(Arrays.toString(arr));*/
     }
 }
