@@ -15,6 +15,7 @@ public class AutoCloseableDemo {
         try(
             //自动关闭特性是便器认可的,代码编译后会变成FinallyDemo1的样子
             //在try()中定义的内容最终会被编译修改为finally中调用close()关闭操作
+            //只有流可以放在这里
             /*FileOutputStream fos = new FileOutputStream("test1/test/pw.txt");*/
             FileOutputStream fos = null;
         ){
