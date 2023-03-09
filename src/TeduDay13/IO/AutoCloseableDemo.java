@@ -15,11 +15,14 @@ public class AutoCloseableDemo {
         try(
             //自动关闭特性是便器认可的,代码编译后会变成FinallyDemo1的样子
             //在try()中定义的内容最终会被编译修改为finally中调用close()关闭操作
-            FileOutputStream fos = new FileOutputStream("test1/test/pw.txt");
+            /*FileOutputStream fos = new FileOutputStream("test1/test/pw.txt");*/
+            FileOutputStream fos = null;
         ){
             fos.write(1);
         }catch (IOException e){
-            e.printStackTrace();
+            System.out.println("出现了IO异常");
+        } catch (Exception e){
+            System.out.println("出现了异常");
         }
         System.out.println("程序结束了");
     }
