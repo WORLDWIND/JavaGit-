@@ -57,6 +57,7 @@ public class Server {
                     BufferedWriter bw = new BufferedWriter(osw);
                     PrintWriter pw = new PrintWriter(bw, true);
                     pw.println(message);
+
                 }
             }
         } catch (IOException e) {
